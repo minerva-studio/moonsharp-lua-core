@@ -19,12 +19,14 @@ namespace MoonSharp.Interpreter
     {
         private static Task<T> ExecAsync<T>(Func<T> func)
         {
-            return Task.Factory.StartNew<T>(func);
+            var ts = TaskScheduler.FromCurrentSynchronizationContext();
+            return Task.Factory.StartNew<T>(func, CancellationToken.None, TaskCreationOptions.PreferFairness, ts);
         }
 
         private static Task ExecAsyncVoid(Action func)
         {
-            return Task.Factory.StartNew(func);
+            var ts = TaskScheduler.FromCurrentSynchronizationContext();
+            return Task.Factory.StartNew(func, CancellationToken.None, TaskCreationOptions.PreferFairness, ts);
         }
 
 

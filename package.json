@@ -1,0 +1,21 @@
+{
+    "name": "com.minervastudio.lua",
+    "version": "1.0.0",
+    "displayName": "Lua Scripting",
+    "description": "Lua scripting uses MoonSharp library to support lua scripting in Unity. MoonSharp is a Lua interpreter written entirely in C# for maximum compatibility in .NET, Mono, Xamarin and Unity. see https://github.com/moonsharp-devs/moonsharp for more information. Do not report any issue to the original repo.",
+    "unity": "2018.3",
+    "dependencies": {},
+    "keywords": [
+        "external",
+        "lua",
+        "MoonSharp",
+        "C#",
+        "minerva studio",
+        "minerva game studio"
+    ],
+    "author": {
+        "name": "Minerva Game Studio",
+        "email": "library.of.meialia@gmail.com",
+        "url": "https://github.com/minerva-studio/moonsharp-lua-core"
+    }
+}
